@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark .img-shadow {
+    width: 250px;
+    -webkit-filter: drop-shadow(5px 10px 5px #090a01e2);
+    filter: drop-shadow(5px 10px 5px #090a01e2);
+    }
+
+.img-shadow {
+    width: 250px;
+    -webkit-filter: drop-shadow(5px 10px 5px #28281487);
+    filter: drop-shadow(5px 10px 5px #28281487);
+    }
+
+.dark .simplebar-scrollbar::before {
+    background-color: white;
+    }
+
+.dark .three-d {
+    text-shadow: 0px 5px 0px #533519;
+    }
+.three-d {
+    text-shadow: none;
+    }
+.item {
+        /* width: auto;
+        height: auto; */
+        /* overflow: visible; */
+        stroke: rgba(20, 20, 20, 0.616);
+        stroke-width: 1;
+        stroke-linejoin: miter;
+        stroke-linecap: unset;
+    }
+.navbars{
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+/* App.css */
+button {
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    cursor: pointer;
+  }
+  
+  /* To make sure the menu nav is displayed above other elements */
+  div[role="menu"] {
+    z-index: 10;
+  }
+  
+/* .burger{
+    width: 100%;
+    &::after, &::before{
+        content: "";
+        display: block;
+        height: 1px;
+        width: 40%;
+        margin: auto;
+        background-color: white;
+        position: relative;
+        transition: transform 0.3s;
+    }
+
+    &::after{
+        top: -5px;
+    }
+
+    &::before{
+        top: 5px;
+    }
+}
+
+.burgerActive{
+
+    &::after{
+        transform: rotate(45deg);
+        top: -1px;
+    }
+
+    &::before{
+        transform: rotate(-45deg);
+        top: 0px;
+    }
+    
+} */
+/* .buttons{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #455CE9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    height: 100vh;
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: white;
+
+    .body{
+        box-sizing: border-box;
+        height: 100%;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .nav{
+            display: flex;
+            flex-direction: column;
+            font-size: 56px;
+            gap: 12px;
+            margin-top: 80px;
+
+            .header{
+                color: rgb(153, 153, 153);
+                border-bottom: 1px solid rgb(153, 153, 153);
+                text-transform: uppercase;
+                font-size: 11px;
+                margin-bottom: 40px;
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 300;
+            }
+            
+        }
+    }
+} */
