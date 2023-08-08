@@ -7,7 +7,7 @@ interface ContactProps {
 
 const Contact: FC<ContactProps> = ({ }) => {
     return (
-        <div className='bg-red-500 flex h-[15rem] justify-center gap-4 mx-auto p-5 items-center '>
+        <div className='flex h-[15rem] dark:text-white justify-center gap-4 mx-auto p-5 items-center '>
             <div className='grid grid-cols-2 gap-5 sm:grid-cols-3 items-center'>
                 <div className=''>
                     <LargeHeader className='flex justify-start mb-4'>

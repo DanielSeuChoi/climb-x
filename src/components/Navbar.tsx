@@ -43,7 +43,6 @@ const Navbar = () => {
                 <Link href={'/locations'}>
                     <Button className='' variant={'link'}>Locations</Button>
                 </Link>
-                <DropDownMenu />
             </div>
         </nav>
     )

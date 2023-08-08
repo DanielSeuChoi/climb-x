@@ -31,8 +31,8 @@ export default function RootLayout({
         <Providers>
           <ActiveSectionContextProvider>
             <Navbar />
-            <MobileMenu />
             <main>{children}</main>
+            <MobileMenu />
             <Contact />
             <Footer />
           </ActiveSectionContextProvider>

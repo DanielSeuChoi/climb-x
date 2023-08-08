@@ -16,12 +16,12 @@ export default function Climbs() {
         <motion.section
             id="projects"
             ref={ref}
-            className='scroll-mt-28 mb-28 p-5 bg-[#ecececfa] w-full'
+            className='scroll-mt-28 mb-28 p-5 w-full'
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.176 }}
         >
-            <LargeHeader className='flex justify-center mb-6 dark:text-light-gold' size={'md'}>Types Of Climbs</LargeHeader>
+            <LargeHeader className='flex justify-center mb-6 dark:text-light-gold' size={'md'}>Amenities</LargeHeader>
             <div className='flex items-center justify-center'>
                 <div className='flex flex-col sm:flex-row'>
                     {projectsData.map((project, index) => (

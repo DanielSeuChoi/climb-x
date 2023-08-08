@@ -9,7 +9,9 @@ export default function MyDrawer() {
   return (
     <Drawer.Root shouldScaleBackground>
       <Drawer.Trigger asChild>
-        <Button className="p-4 top-20 mt-8" variant={'default'}>
+        <Button className="fixed bottom-4 right-4  
+        flex items-center justify-center 
+        transition-all" variant={'default'}>
           <Icons.Menu />
         </Button>
       </Drawer.Trigger>

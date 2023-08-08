@@ -1,20 +1,19 @@
-import Amens from "@/components/Amens";
-import BackgroundVideo from "@/components/BackgroundVideo";
+import Carousel from "@/components/Carousel";
 import Climbs from "@/components/Climbs";
 import Directions from "@/components/Directions";
-import HomePhoto from "@/components/home/HomePhoto";
-import IntroContent from "@/components/home/IntroContent";
+import Divider from "@/components/Divider";
 import Intro from "@/home/Intro";
-import Image from "next/image";
+import { photoGallery } from "@/lib/data";
+
 export default function Home() {
 
   return (
-    <main className=" flex flex-col justify-center items-center ">
+    <main className=" flex flex-col justify-center items-center overflow-x-hidden">
       < Intro />
-      <IntroContent />
-      <Climbs />
-      <Amens />
       <Directions />
+      <Climbs />
+      <Directions />
+      <Divider color="#FFFFFF" thickness={3}/>
     </main >
   )
 }

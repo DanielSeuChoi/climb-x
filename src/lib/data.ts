@@ -1,8 +1,14 @@
-import React from "react";
+
 
 import hb from '@/publichb.jpg'
 import bould from '@/publicbould.png'
 import lead from '@/publiclead.png'
+import { StaticImageData } from "next/image";
+
+
+export const photoGallery=[
+    hb, bould, lead
+] as const
 
 
 export const links = [
@@ -76,7 +82,7 @@ export const navItems = [
 
 export const projectsData = [
     {
-        title: "Top Rope",
+        title: "Gym",
         description:
             `I worked as a full-stack developer on this startup project for 2 years.
             Users can give public feedback to companies Click On the photo !.`,
@@ -91,7 +97,7 @@ export const projectsData = [
         imageUrl: bould,
     },
     {
-        title: "Lead Climb",
+        title: "Yoga",
         description:
             "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies Click On the photo !..",
         imageUrl: bould,
