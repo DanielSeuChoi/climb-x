@@ -1,15 +1,21 @@
-import BackgroundImageOverlay from "@/components/BackgroundVideo";
-import LargeHeader from "@/components/LargeHeader";
+
+import Divider from "@/components/Divider";
+import LocationsContext from "@/components/LocationsContext";
+import MembershipCards from "@/components/MembershipCards";
+import GearCards from "@/components/memberships/GearCards";
+import MembershipContext from "@/components/memberships/MembershipContext";
+
 
 export default function Membership() {
 
     return (
-        <main className="relative h-screen flex flex-col items-center justify-center overflow-x-hidden">
-            <BackgroundImageOverlay  imageUrl="/yamero.jpg">
-            <LargeHeader size='lg'>
-                Memberships
-            </LargeHeader>
-            </BackgroundImageOverlay>
+        <main className="flex flex-col justify-center items-center overflow-x-hidden">
+            <div className='mt-32'>
+                <MembershipCards/>
+            </div>
+            <LocationsContext/>
+            <GearCards/>
+            <Divider color="#FFFFFF" thickness={3}/>
         </main>
     )
 }

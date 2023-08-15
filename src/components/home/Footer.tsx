@@ -7,6 +7,7 @@ interface FooterProps {
 const Footer: FC<FooterProps> = ({ }) => {
     return (
         <footer className=" mb-10 mt-10 px-4 text-center text-gray-500">
+            
             <small className="mb-2 block text-xs">
                 &copy; 2030 Daniel. All rights reserved.
             </small>

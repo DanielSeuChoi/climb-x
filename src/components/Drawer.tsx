@@ -5,13 +5,14 @@ import Button from "@/ui/Button";
 import Icons from "@/components/Icons";
 import LargeHeader from '@/components/LargeHeader'
 import Paragraph from '@/components/Paragraph'
+import Link from "next/link";
 export default function MyDrawer() {
   return (
     <Drawer.Root shouldScaleBackground>
       <Drawer.Trigger asChild>
-        <Button className="fixed bottom-4 right-4  
+        <Button className="fixed bottom-9 right-4  
         flex items-center justify-center 
-        transition-all" variant={'default'}>
+        transition-all" variant={'ghost'}>
           <Icons.Menu />
         </Button>
       </Drawer.Trigger>
@@ -25,14 +26,24 @@ export default function MyDrawer() {
                 FAQ
               </LargeHeader>
               <ul>
-                <li>What are these</li>
-                <li>Is this random enough?</li>
-                <li>How many hours until</li>
-                <li>Pizza is good but...</li>
+                  <LargeHeader className="text-slate-800" size='md'>
+                  <Link href='/'>
+                  Home
+                  </Link>
+                </LargeHeader>
+
+                <Link className="text-black" href='/locations'>
+                  <LargeHeader size='md'>
+                  Memberships
+                </LargeHeader>
+                </Link>
+                <Link className="text-black" href='/gear'>
+                  <LargeHeader size='md'>
+                  Gear
+                  </LargeHeader>
+                </Link>
               </ul>
-              <LargeHeader size='md'>
-                Home
-              </LargeHeader>
+
               <Paragraph className="text-zinc-600 mb-8">
                 It uses{" "}
                 <a

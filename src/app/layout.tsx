@@ -10,6 +10,7 @@ import Directions from '@/components/Directions'
 import MobileMenu from '@/components/MobileMenu'
 import Footer from '@/components/home/Footer'
 import Contact from '@/components/home/Contact'
+import Divider from '@/components/Divider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

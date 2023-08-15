@@ -3,25 +3,21 @@ import { FC } from 'react'
 import LargeHeader from "@/components/LargeHeader";
 import { motion } from "framer-motion"
 import Image from 'next/image';
-import HomePhoto from './HomePhoto';
-import Link from 'next/link';
 import Paragraph from '../Paragraph';
-import BackgroundImageOverlay from '../BackgroundImage';
 
-interface IntroProps {
+interface LocationProps {
 
 }
 
-const Intro: FC<IntroProps> = ({ }) => {
+const LocationHome: FC<LocationProps> = ({ }) => {
     return (
         <motion.section
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.176 }}
-            className="relative h-screen w-full 
-            flex items-center justify-center mb-14"
+            className="relative h-screen w-full flex items-center justify-center"
         >
-            <div className='container pt-24 max-w-7xl w-full mx-auto h-full'>
+            <div className='container pt-32 max-w-7xl w-full mx-auto h-full'>
                 <motion.div className=" h-full gap-6 flex flex-col justify-start lg:justify-center items-center lg:items-start">
                 <div className='relative w-full max-w-xl lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute'>
                         <Image
@@ -34,7 +30,7 @@ const Intro: FC<IntroProps> = ({ }) => {
                             alt='typewriter'
                         />
                     </div>
-                    <LargeHeader className='text-left justify-start lg:mr-14' size='lg'>
+                    <LargeHeader className='text-left justify-start mt-5 lg:mr-14' size='lg'>
                         Climb X.
                         <br />
                         Community,
@@ -42,10 +38,12 @@ const Intro: FC<IntroProps> = ({ }) => {
                         Coffee,
                         Climb
                     </LargeHeader>
-                    <Paragraph className='justify-start flex max-w-xl mb-8 lg:text-left'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Numquam, rem magnam culpa repudiandae at pariatur.
+                    <Paragraph className='justify-start flex max-w-xl lg:text-left'>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, rem magnam culpa repudiandae at pariatur.
+
                     </Paragraph>
+
+
                 </motion.div>
             </div>
             {/* <div className='text-center justify-center w-full sm:w-[50rem]  mt-20'></div> */}
@@ -54,4 +52,4 @@ const Intro: FC<IntroProps> = ({ }) => {
     )
 }
 
-export default Intro
+export default LocationHome

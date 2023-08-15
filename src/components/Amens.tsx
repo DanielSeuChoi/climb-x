@@ -21,7 +21,7 @@ export default function Amens() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.176 }}
         >
-            <LargeHeader className='flex justify-center mb-6 dark:text-light-gold' size={'md'}>Amenities</LargeHeader>
+            <LargeHeader className='flex justify-center mb-6 dark:text-light-gold text-white' size={'md'}>Amenities</LargeHeader>
             <div className='items-center justify-center'>
                 <div className='sm:grid sm:grid-cols-3 flex flex-col'>
                     {amensData.map((project, index) => (

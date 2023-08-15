@@ -14,7 +14,7 @@ const Divider: React.FC<DividerProps> = ({ color = '#000', thickness = 1 }) => {
     backgroundColor: color,
   };
 
-  return <div className='mb-5 sm:mt-4 rounded-full' style={dividerStyle} />;
+  return <div className='mb-10 mt-5 sm:mb-5 sm:mt-10 rounded-full' style={dividerStyle} />;
 };
 
 export default Divider;

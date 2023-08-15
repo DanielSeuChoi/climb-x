@@ -79,16 +79,38 @@ export const navItems = [
 //     },
 // ] as const;
 
+export const membershipData = [
+    {
+        title: "Single",
+        description:
+            "Get More Info",
+        tags:`50`,
+        mini:"Get more info mini: Get more info"
+    },
+    {
+        title: "Family",
+        description:
+            "Get More Info",
+        tags:`150`,
+        mini:"Get more info mini: Get more info"
+    },
+    {
+        title: "Couple",
+        description:
+            "Get More Info",
+        tags:`90`,
+        mini:"Get more info mini: Get more info"
+    },
+
+] as const;
 
 export const projectsData = [
     {
         title: "Gym",
         description:
-            `I worked as a full-stack developer on this startup project for 2 years.
-            Users can give public feedback to companies Click On the photo !.`,
+            `I worked as a full-stack
+Users can give public feedback to companies Click On the photo !.`,
         imageUrl: bould,
-
-
     },
     {
         title: "Bouldering",
@@ -101,6 +123,41 @@ export const projectsData = [
         description:
             "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies Click On the photo !..",
         imageUrl: bould,
+    },
+] as const;
+
+export const gearData = [
+    {
+        title: "Chalk",
+        price:`3`,
+        description:
+`Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Illo molestias porro atque! Doloribus, iusto distinctio!`,
+
+    },
+    {
+        title: "Shoes",
+        price:`5`,
+        description:
+        `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Illo molestias porro atque! Doloribus, iusto distinctio!`
+
+    },
+    {
+        title: "Harness",
+        price:`5`,
+        description:
+        `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Illo molestias porro atque! Doloribus, iusto distinctio!`
+
+    },
+    {
+        title: "Lead",
+        price:`5`,
+        description:
+        `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Illo molestias porro atque! Doloribus, iusto distinctio!`
+
     },
 ] as const;
 

@@ -1,6 +1,6 @@
 import {
     Mail, MountainSnow, Lightbulb, Menu,
-    Cross, Dumbbell, PersonStanding, Scale, X
+    Cross, Dumbbell, PersonStanding, Scale, X,Check
 } from "lucide-react";
 
 export default {
@@ -8,7 +8,7 @@ export default {
     MountainSnow,
     Lightbulb,
     Menu,
-    Scale, Cross, Dumbbell, PersonStanding, X
+    Scale, Cross, Dumbbell, PersonStanding, X,Check
 
 
 }

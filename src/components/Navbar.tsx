@@ -32,16 +32,10 @@ const Navbar = () => {
                     <Button className='' variant={'link'}>Home</Button>
                 </Link>
                 <Link href={'/membership'}>
-                    <Button className='' variant={'link'}>Memberships</Button>
+                    <Button className='' variant={'link'}>Memberships & Pricing</Button>
                 </Link>
-                <Link href={'/locations'}>
-                    <Button className='' variant={'link'}>Locations</Button>
-                </Link>
-                <Link href={'/gear'}>
-                    <Button className='' variant={'link'}>Gear</Button>
-                </Link>
-                <Link href={'/locations'}>
-                    <Button className='' variant={'link'}>Locations</Button>
+                <Link href={'/contact'}>
+                    <Button className='' variant={'link'}>Contact</Button>
                 </Link>
             </div>
         </nav>

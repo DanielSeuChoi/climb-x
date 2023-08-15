@@ -28,10 +28,10 @@ export default function Climb({
             className='group mb-3 sm:mb-8 p-3'
             ref={ref}
         >
-            <section className=" w-full rounded-lg overflow-hidden sm:pr-8 relative sm:h-[30rem]
+            <section className=" max-w-[30rem] rounded-lg overflow-hidden relative sm:h-[30rem]
             transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 flex flex-col justify-center items-center">
                 <div className="pt-4 pb-7 sm:pt-10 sm:max-w-[50%] flex flex-col ">
-                    <LargeHeader size={'md'} className="text-center justify-center">
+                    <LargeHeader size={'md'} className="text-center justify-center flex">
                         {title}
                     </LargeHeader>
                 </div>

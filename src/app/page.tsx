@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <main className=" flex flex-col justify-center items-center overflow-x-hidden">
-      < Intro />
+      <Intro />
       <Directions />
       <Climbs />
       <Directions />
