@@ -2,18 +2,23 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import LargeHeader from "@/components/LargeHeader";
-import Paragraph from "@/components/Paragraph"
-import Icons from "@/components/Icons"
+import Paragraph from "../Paragraph";
+import Icons from "../Icons";
 
-const MembershipContext = () => {
+const LocationsContext = () => {
   return (
-    <motion.div className="grid mx-auto justify-center items-center h-full w-full mt-32 mb-7 px-8">
+    <motion.div className="grid mx-auto justify-center items-center 
+    h-full w-full mt-32 mb-7 px-8"
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.176 }}
+    >
       <LargeHeader size="lg" className="flex justify-center items-center mb-10">
-        Gear
+        Other passes
       </LargeHeader>
       <section
         className="grid-cols-3 w-full rounded-lg overflow-hidden relative sm:h-[30rem]
-            transition dark:text-white dark:bg-white/10  justify-center flex 
+            transition dark:text-white justify-center flex 
             flex-col sm:flex-row items-center gap-10 p-10"
       >
         <div>
@@ -68,4 +73,4 @@ const MembershipContext = () => {
   );
 };
 
-export default MembershipContext;
+export default LocationsContext;

@@ -3,10 +3,8 @@ import { FC } from 'react'
 import LargeHeader from "@/components/LargeHeader";
 import { motion } from "framer-motion"
 import Image from 'next/image';
-import HomePhoto from './HomePhoto';
-import Link from 'next/link';
 import Paragraph from '../Paragraph';
-import BackgroundImageOverlay from '../BackgroundImage';
+
 
 interface IntroProps {
 
@@ -23,7 +21,7 @@ const Intro: FC<IntroProps> = ({ }) => {
         >
             <div className='container pt-24 max-w-7xl w-full mx-auto h-full'>
                 <motion.div className=" h-full gap-6 flex flex-col justify-start lg:justify-center items-center lg:items-start">
-                <div className='relative w-full max-w-xl lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute'>
+                    <div className='relative w-full max-w-xl lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute'>
                         <Image
                             priority
                             className='img-shadow '
@@ -35,7 +33,7 @@ const Intro: FC<IntroProps> = ({ }) => {
                         />
                     </div>
                     <LargeHeader className='text-left justify-start lg:mr-14' size='lg'>
-                        Climb X.
+                        Climber X.
                         <br />
                         Community,
                         <br />
@@ -43,14 +41,13 @@ const Intro: FC<IntroProps> = ({ }) => {
                         Climb
                     </LargeHeader>
                     <Paragraph className='justify-start flex max-w-xl mb-8 lg:text-left'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Numquam, rem magnam culpa repudiandae at pariatur.
                     </Paragraph>
                 </motion.div>
             </div>
             {/* <div className='text-center justify-center w-full sm:w-[50rem]  mt-20'></div> */}
         </motion.section>
-
     )
 }
 

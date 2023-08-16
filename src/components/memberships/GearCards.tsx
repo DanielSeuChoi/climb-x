@@ -16,7 +16,7 @@ export default function GearCards() {
             id="projects"
             ref={ref}
             className='scroll-mt-28 mb-1 p-5 w-full'
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.176 }}
         >

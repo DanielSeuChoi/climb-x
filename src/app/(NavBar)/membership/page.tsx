@@ -1,9 +1,9 @@
 
 import Divider from "@/components/Divider";
-import LocationsContext from "@/components/LocationsContext";
-import MembershipCards from "@/components/MembershipCards";
+import LocationsContext from "@/components/locations/LocationsContext";
+import MembershipCards from "@/components/memberships/MembershipCards";
 import GearCards from "@/components/memberships/GearCards";
-import MembershipContext from "@/components/memberships/MembershipContext";
+
 
 
 export default function Membership() {
@@ -11,11 +11,11 @@ export default function Membership() {
     return (
         <main className="flex flex-col justify-center items-center overflow-x-hidden">
             <div className='mt-32'>
-                <MembershipCards/>
+                <MembershipCards />
             </div>
-            <LocationsContext/>
-            <GearCards/>
-            <Divider color="#FFFFFF" thickness={3}/>
+            <LocationsContext />
+            <GearCards />
+            <Divider color="#FFFFFF" thickness={3} />
         </main>
     )
 }

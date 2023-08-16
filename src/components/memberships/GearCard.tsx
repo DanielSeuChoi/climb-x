@@ -6,7 +6,7 @@ import Image from 'next/image';
 import LargeHeader from '@/components/LargeHeader';
 import Paragraph from '@/components/Paragraph';
 import Button from '@/components/ui/Button';
-import Link from '@/components/Link';
+
 
 
 type GearCardProps = (typeof gearData)[number];
@@ -27,13 +27,13 @@ export default function GearCard({
             initial="initial"
             whileInView="animate"
             viewport={{
-              once: true,
+                once: true,
             }}
         >
             <section className="
-            max-w-[30rem] w-full p-5
+            max-w-[30rem] w-full p-5 
             rounded-lg overflow-hidden relative 
-            sm:h-[25rem] md:flex-col lg:flex-col
+            sm:h-[17rem]  md:flex-col lg:flex-col
             transition dark:text-white
             dark:bg-white/10 dark:hover:bg-white/20 
             flex flex-col justify-center items-center">
@@ -44,13 +44,13 @@ export default function GearCard({
                 </div>
                 <div className='text-center justify-center flex'>
                     <span>$</span>
-                        <LargeHeader size='md'>
-                           {price}
-                        </LargeHeader>
-                    </div>
-                    <Paragraph className='mt-3'>
-                        {description}
-                    </Paragraph>
+                    <LargeHeader size='md'>
+                        {price}
+                    </LargeHeader>
+                </div>
+                <Paragraph className='mt-3'>
+                    {description}
+                </Paragraph>
             </section>
         </motion.div>)
 }

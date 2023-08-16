@@ -3,10 +3,10 @@ import { membershipData } from '@/lib/data';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react'
 import Image from 'next/image';
-import LargeHeader from './LargeHeader';
-import Paragraph from './Paragraph';
-import Button from './ui/Button';
-import Link from './Link';
+import LargeHeader from '@/components/LargeHeader';
+import Paragraph from '@/components/Paragraph';
+import Button from '@/ui/Button';
+
 
 
 type MembershipProps = (typeof membershipData)[number];
@@ -44,19 +44,19 @@ export default function MembershipCard({
                         {title}
                     </LargeHeader>
                 </div>
-                    <div className='justify-center items-center flex w-[10rem] rounded-t-lg shadow-2xl
+                <div className='justify-center items-center flex w-[10rem] rounded-t-lg shadow-2xl
                         transition'>
                     <span>$</span>
-                        <LargeHeader size='md'>
-                           {tags}
-                        </LargeHeader>
+                    <LargeHeader size='md'>
+                        {tags}
+                    </LargeHeader>
 
-                    </div>
-                    <Paragraph>
-                        {mini}
-                    </Paragraph>
+                </div>
+                <Paragraph>
+                    {mini}
+                </Paragraph>
                 <Button variant='default' className="p-4 sm:p-4 text-center">
-                    
+
                     {description}
                 </Button>
 
