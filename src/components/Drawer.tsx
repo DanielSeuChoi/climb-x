@@ -6,6 +6,7 @@ import Icons from "@/components/Icons";
 import LargeHeader from '@/components/LargeHeader'
 import Paragraph from '@/components/Paragraph'
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 export default function MyDrawer() {
   return (
     <Drawer.Root shouldScaleBackground>
@@ -25,6 +26,8 @@ export default function MyDrawer() {
               <LargeHeader size='lg' className="dark:text-slate-800 text-center">
                 Navigate
               </LargeHeader>
+              <br />
+              <ThemeToggle />
               <br />
               <ul>
                 <LargeHeader size='md' className="dark:text-slate-800 text-start underline p-3">

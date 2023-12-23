@@ -8,14 +8,12 @@ import Icons from "../Icons";
 const LocationsContext = () => {
   return (
     <motion.div className="grid mx-auto justify-center items-center 
-    h-full w-full mt-32 mb-7 px-8"
+    h-full w-full mt-24 mb-7 px-8"
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.176 }}
     >
-      <LargeHeader size="lg" className="flex justify-center items-center mb-10">
-        Other passes
-      </LargeHeader>
+
       <section
         className="grid-cols-3 w-full rounded-lg overflow-hidden relative sm:h-[30rem]
             transition dark:text-white justify-center flex 

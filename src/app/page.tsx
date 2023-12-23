@@ -12,7 +12,7 @@ export default function Home() {
       <Mission />
       <Climbs />
       {/* <Directions /> */}
-      <Divider color="#FFFFFF" thickness={3} />
+      <Divider color="#000000" thickness={3} />
     </main >
   )
 }

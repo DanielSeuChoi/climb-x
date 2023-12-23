@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Paragraph from "@/components/Paragraph";
 
-interface IntroContentProps {}
+interface IntroContentProps { }
 
-const IntroContent: FC<IntroContentProps> = ({}) => {
-  const [isHovered, setHovered] = useState(false);
+const IntroContent: FC<IntroContentProps> = ({ }) => {
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 0 }}
@@ -18,19 +18,19 @@ const IntroContent: FC<IntroContentProps> = ({}) => {
     >
       <div className=" container w-full h-full">
         <motion.div className="gap-10 lg:flex w-full justify-between lg:justify-center items-center lg:items-start">
-            <div className="lg:order-first sm:order-first">
-              <LargeHeader size='md' className="order-last mx-auto justify-center items-center ">
-                  Schedule
-              </LargeHeader>
-              <br/>
-              <Paragraph className=" text-center justify-center">
-                Mon-Fri 7AM-9PM
-                <br/>
-                Sat 8AM-8PM
-                <br/>
-                Sun 9AM-6PM
-              </Paragraph>
-            </div>
+          <div className="lg:order-first sm:order-first">
+            <LargeHeader size='md' className="order-last mx-auto justify-center items-center ">
+              Schedule
+            </LargeHeader>
+            <br />
+            <Paragraph className=" text-center justify-center">
+              Mon-Fri 7AM-9PM
+              <br />
+              Sat 8AM-8PM
+              <br />
+              Sun 9AM-6PM
+            </Paragraph>
+          </div>
           <div>
             <Paragraph className="justify-start flex max-w-xl lg:text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis

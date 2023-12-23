@@ -7,7 +7,7 @@ import Paragraph from "@/components/Paragraph"
 const Mission = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.176 }}
             className='mx-auto justify-center items-center h-full w-full mb-7 px-8'
@@ -16,7 +16,7 @@ const Mission = () => {
             transition dark:text-white  justify-center flex 
             flex-col sm:flex-row items-center gap-10 p-4">
                 <div>
-                    <LargeHeader size='md' className="flex justify-center ">
+                    <LargeHeader size='md' className=" flex justify-center ">
                         Our Mission
                     </LargeHeader>
                     <br />

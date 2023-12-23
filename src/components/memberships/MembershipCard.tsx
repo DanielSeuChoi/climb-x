@@ -35,6 +35,7 @@ export default function MembershipCard({
             rounded-lg overflow-hidden relative 
             sm:h-[20rem]  md:flex-col lg:flex-col
             transition dark:text-white
+            bg-zinc-300
             dark:bg-white/10 dark:hover:bg-white/20 
             flex flex-col justify-center items-center
             
@@ -44,7 +45,7 @@ export default function MembershipCard({
                         {title}
                     </LargeHeader>
                 </div>
-                <div className='justify-center items-center flex w-[10rem] rounded-t-lg shadow-2xl
+                <div className='justify-center items-center flex w-[10rem] rounded-t-lg
                         transition'>
                     <span>$</span>
                     <LargeHeader size='md'>
@@ -55,8 +56,7 @@ export default function MembershipCard({
                 <Paragraph>
                     {mini}
                 </Paragraph>
-                <Button variant='default' className="p-4 sm:p-4 text-center">
-
+                <Button variant='default' className="p-4 sm:p-4 text-center opacity-50 hover:opacity-100 ">
                     {description}
                 </Button>
 

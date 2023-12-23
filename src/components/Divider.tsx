@@ -7,7 +7,7 @@ interface DividerProps {
   thickness?: number;
 }
 
-const Divider: React.FC<DividerProps> = ({ color = '#000', thickness = 1 }) => {
+const Divider: React.FC<DividerProps> = ({ color = '#FFF', thickness = 1 }) => {
   const dividerStyle: React.CSSProperties = {
     width: '75%',
     height: thickness,

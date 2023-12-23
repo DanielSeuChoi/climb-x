@@ -18,7 +18,7 @@ export default function MembershipCards() {
         <motion.section
             id="projects"
             ref={ref}
-            className='scroll-mt-28 mb-1 p-5 w-full'
+            className='scroll-mt-64 mb-20  p-5 w-full'
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.176 }}
@@ -30,7 +30,7 @@ export default function MembershipCards() {
                 <LargeHeader size='sm'>
                     Not a member?
                 </LargeHeader>
-                <Link className='hover:underline' href='/login'>Create an Account</Link>
+                <Link className='hover:underline' href='/membership'>Create an Account</Link>
             </div>
             <div className='flex items-center justify-center'>
                 <div className='flex flex-col sm:flex-row'>

@@ -3,6 +3,8 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
 import { useState } from "react"
+import Paragraph from "@/components/Paragraph";
+import LargeHeader from "@/components/LargeHeader";
 
 export default function ContactSection() {
     const { ref } = useSectionInView("Contact");
@@ -11,7 +13,7 @@ export default function ContactSection() {
         <motion.section
             id="contact"
             ref={ref}
-            className="mb-20 mt-6 sm:mb-28 w-[min(80%,38rem)] text-center"
+            className="bg-zinc-300 dark:bg-transparent rounded-lg mb-20 mt-6 sm:mb-28 w-[min(85%,38rem)] text-center p-3 md:p-5"
             initial={{
                 opacity: 0,
             }}
@@ -25,6 +27,9 @@ export default function ContactSection() {
                 once: true,
             }}
         >
+            <LargeHeader size='md' className="dark:text-light-gold tracking-tighter">
+                Reach out to us for any questions!
+            </LargeHeader>
             <form
                 className="mt-10 flex flex-col dark:text-black"
                 onSubmit={() => setsentMail}

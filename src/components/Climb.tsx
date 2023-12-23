@@ -29,7 +29,7 @@ export default function Climb({
             ref={ref}
         >
             <section className=" max-w-[30rem] rounded-lg overflow-hidden relative sm:h-[30rem]
-            transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 flex flex-col justify-center items-center">
+            transition dark:text-white bg-zinc-300 dark:bg-white/10 dark:hover:bg-white/20 flex flex-col justify-center items-center">
                 <div className="pt-4 pb-7 sm:pt-10 sm:max-w-[50%] flex flex-col ">
                     <LargeHeader size={'md'} className="text-center justify-center flex">
                         {title}
